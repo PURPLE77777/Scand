@@ -1,3 +1,123 @@
+$font-main: "Exo 2", sans-serif;
+$font-text: "PT Sans", sans-serif;
+html,
 body {
-    color: red;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    .root {
+        display: flex;
+        justify-content: center;
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 1457px;
+            font-family: $font-text;
+            .wrap {
+                padding: 109px 0px 120px 0px;
+                width: 1240px;
+                .main-screen {
+                    .provider {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        .provider-desc {
+                            padding-right: 80px;
+                            .provider-desc_h2 {
+                                h2 {
+                                    color: #363738;
+                                    margin: 81px 0px 0px 0px;
+                                    font-weight: 600;
+                                    font-size: 52px;
+                                    line-height: 125%;
+                                    font-family: $font-main;
+                                }
+                            }
+                            .provider-desc_span {
+                                margin: 40px 0px;
+                                span {
+                                    color: #6b6b6c;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                }
+                            }
+                            .provider-desc_more {
+                                a {
+                                    color: #363738;
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    line-height: 150%;
+                                    font-size: 16px;
+                                    padding-bottom: 8.5px;
+                                    border-bottom: 3px solid #ffce50;
+                                }
+                            }
+                        }
+                        .provider-img {
+                            img {
+                                max-width: 635px;
+                                height: 505px;
+
+                                border-radius: 0px 20px 20px 20px;
+                                transform: matrix(-1, 0, 0, 1, 0, 0);
+                            }
+                        }
+                    }
+                    .services {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        background: #ffffff;
+                        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+                        border-radius: 20px;
+                        padding: 40px 0px;
+                        margin-top: 65px;
+                        .services-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 261px;
+                            .item-container {
+                                display: flex;
+                                flex-flow: column nowrap;
+                                width: 228px;
+                                height: 245px;
+                                .item-img {
+                                    max-width: 92px;
+                                }
+                                .item-title {
+                                    color: #363738;
+                                    font-family: $font-main;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 135%;
+                                    margin: 24px 0px 16px 0px;
+                                }
+                                .item-desc {
+                                    color: #6b6b6c;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                }
+                            }
+                        }
+                        .services-item:nth-child(2) {
+                            border-left: 1px solid #d7d7dd;
+                            border-right: 1px solid #d7d7dd;
+                        }
+                    }
+                }
+            }
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 596px;
+            height: 787px;
+            background-color: #0b7572;
+            z-index: -1;
+        }
+    }
 }
