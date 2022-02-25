@@ -1,0 +1,196 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+html .root,
+body .root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .root .levels,
+body .root .levels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .root .levels .level,
+body .root .levels .level {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  min-width: 256px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 15px;
+  background-color: #fff;
+  text-align: right;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .root .levels .level .level-header,
+body .root .levels .level .level-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+html .root .levels .level .level-header .star,
+body .root .levels .level .level-header .star {
+  cursor: pointer;
+  position: relative;
+  font-size: 26pt;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #63abf0;
+  z-index: 1;
+}
+
+html .root .levels .level .level-header .level-header_p,
+body .root .levels .level .level-header .level-header_p {
+  font-size: 22pt;
+  font-weight: 500;
+  margin: 0px;
+}
+
+html .root .levels .level .level-header .star-completed,
+body .root .levels .level .level-header .star-completed {
+  color: #fff;
+}
+
+html .root .levels .level .level-header .star::before,
+body .root .levels .level .level-header .star::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+html .root .levels .level .level-header .star:hover::before,
+body .root .levels .level .level-header .star:hover::before {
+  width: 45px;
+  height: 45px;
+}
+
+html .root .levels .level .require,
+body .root .levels .level .require {
+  margin-top: 10px;
+  height: 100%;
+}
+
+html .root .levels .level .require .require-title,
+body .root .levels .level .require .require-title {
+  font-size: 18pt;
+  margin: 0px;
+}
+
+html .root .levels .level .require .require-list,
+body .root .levels .level .require .require-list {
+  margin-top: 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+html .root .levels .level .require .require-list .require-item,
+body .root .levels .level .require .require-list .require-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 5px;
+}
+
+html .root .levels .level .require .require-list .require-item .require-text,
+body .root .levels .level .require .require-list .require-item .require-text {
+  margin: 0px;
+  font-weight: 500;
+}
+
+html .root .levels .level .require .require-list .require-item .require-status,
+body .root .levels .level .require .require-list .require-item .require-status {
+  margin-left: 10px;
+  max-width: 20px;
+}
+
+html .root .levels .level .turnover,
+body .root .levels .level .turnover {
+  font-size: 11pt;
+}
+
+html .root .levels .completed,
+body .root .levels .completed {
+  background-color: #3fe197;
+  color: #fff;
+}
