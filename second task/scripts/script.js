@@ -1,4 +1,41 @@
-import levelsData from "../dataset.js";
+const levelsData = {
+    levels: [
+        {
+            title: "Level 1",
+            requirements: [
+                {
+                    name: "Confirm E-mail",
+                    status: true,
+                },
+                {
+                    name: "Confirm Phone Number",
+                    status: true,
+                },
+                {
+                    name: "Enter personal details",
+                    status: true,
+                },
+            ],
+            turnover: "2.500",
+            currency: "EUR",
+        },
+        {
+            title: "Level 2",
+            requirements: [
+                {
+                    name: "Upload Photo ID",
+                    status: false,
+                },
+                {
+                    name: "Upload Utility Bill",
+                    status: false,
+                },
+            ],
+            turnover: "30.000",
+            currency: "EUR",
+        },
+    ],
+};
 
 class Levels {
     constructor(level) {
@@ -50,10 +87,10 @@ class Levels {
             img.src = this.requirements.every((requirement) => {
                 return requirement.status;
             })
-                ? "../img/completed-ful.svg"
+                ? "./img/completed-ful.svg"
                 : requirement.status
-                ? "../img/completed.svg"
-                : "../img/checking.svg";
+                ? "./img/completed.svg"
+                : "./img/checking.svg";
             li.append(p, img);
             ul.append(li);
         });
@@ -90,9 +127,11 @@ class Levels {
 }
 
 let levels = levelsData.levels;
+console.log(levels);
 
 let levelList = [];
 levels.forEach((item) => {
     let level = new Levels(item);
     levelList.push(level);
 });
+console.log(levelList);
