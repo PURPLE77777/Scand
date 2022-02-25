@@ -127,11 +127,9 @@ class Levels {
 }
 
 let levels = levelsData.levels;
-console.log(levels);
 
 let levelList = [];
 levels.forEach((item) => {
     let level = new Levels(item);
     levelList.push(level);
 });
-console.log(levelList);
