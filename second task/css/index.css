@@ -46,7 +46,7 @@ body .root .levels .level {
   min-width: 256px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0px 15px;
+  margin: 15px;
   background-color: #fff;
   text-align: right;
   padding: 20px;
