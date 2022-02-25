@@ -258,6 +258,28 @@ body {
                                 max-height: 260px;
                             }
                         }
+                        @media (max-width: 410px) {
+                            .provider-desc {
+                                .provider-desc_h2 {
+                                    h2 {
+                                        font-size: 26px;
+                                    }
+                                }
+                                .provider-desc_span {
+                                    max-width: 260px;
+                                }
+                                .provider-desc_more {
+                                    margin: 55px 0px 60px 0px;
+                                    a {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .provider-img {
+                                width: 340px;
+                                max-height: 260px;
+                            }
+                        }
                         @media (max-width: 375px) {
                             .provider-desc {
                                 .provider-desc_h2 {
@@ -288,6 +310,16 @@ body {
                                 width: 345px;
                                 max-height: 253px;
                                 border-radius: 20px;
+                            }
+                        }
+                        @media (max-width: 350px) {
+                            .provider-img {
+                                width: 320px;
+                            }
+                        }
+                        @media (max-width: 320px) {
+                            .provider-img {
+                                width: 300px;
                             }
                         }
                     }
@@ -438,6 +470,21 @@ body {
                                 }
                             }
                         }
+                        @media (max-width: 410px) {
+                            .services-item {
+                                .item-container {
+                                    .item-info {
+                                        .item-title {
+                                            margin: 0px;
+                                            font-size: 13px;
+                                        }
+                                        .item-desc {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         @media (max-width: 375px) {
                             .services-item {
                                 .item-container {
@@ -544,9 +591,24 @@ body {
                     max-width: 378px;
                 }
             }
+            @media (max-width: 410px) {
+                .wrap {
+                    max-width: 340px;
+                }
+            }
             @media (max-width: 375px) {
                 .wrap {
                     max-width: 345px;
+                }
+            }
+            @media (max-width: 350px) {
+                .wrap {
+                    max-width: 320px;
+                }
+            }
+            @media (max-width: 320px) {
+                .wrap {
+                    max-width: 300px;
                 }
             }
         }
@@ -593,6 +655,7 @@ body {
         @media (max-width: 720px) {
             .container::after {
                 width: 138px;
+                height: 791px;
             }
         }
         @media (max-width: 640px) {
@@ -610,10 +673,26 @@ body {
                 height: 704px;
             }
         }
+        @media (max-width: 410px) {
+            .container::after {
+                width: 100px;
+                height: 686px;
+            }
+        }
         @media (max-width: 375px) {
             .container::after {
                 width: 100%;
-                height: 766px;
+                height: 832px;
+            }
+        }
+        @media (max-width: 350px) {
+            .container::after {
+                height: 832px;
+            }
+        }
+        @media (max-width: 320px) {
+            .container::after {
+                height: 832px;
             }
         }
     }

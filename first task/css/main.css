@@ -320,6 +320,30 @@ body .root .container .wrap .main-screen .provider .provider-img {
   }
 }
 
+@media (max-width: 410px) {
+  html .root .container .wrap .main-screen .provider .provider-desc .provider-desc_h2 h2,
+  body .root .container .wrap .main-screen .provider .provider-desc .provider-desc_h2 h2 {
+    font-size: 26px;
+  }
+  html .root .container .wrap .main-screen .provider .provider-desc .provider-desc_span,
+  body .root .container .wrap .main-screen .provider .provider-desc .provider-desc_span {
+    max-width: 260px;
+  }
+  html .root .container .wrap .main-screen .provider .provider-desc .provider-desc_more,
+  body .root .container .wrap .main-screen .provider .provider-desc .provider-desc_more {
+    margin: 55px 0px 60px 0px;
+  }
+  html .root .container .wrap .main-screen .provider .provider-desc .provider-desc_more a,
+  body .root .container .wrap .main-screen .provider .provider-desc .provider-desc_more a {
+    font-size: 12px;
+  }
+  html .root .container .wrap .main-screen .provider .provider-img,
+  body .root .container .wrap .main-screen .provider .provider-img {
+    width: 340px;
+    max-height: 260px;
+  }
+}
+
 @media (max-width: 375px) {
   html .root .container .wrap .main-screen .provider .provider-desc .provider-desc_h2,
   body .root .container .wrap .main-screen .provider .provider-desc .provider-desc_h2 {
@@ -355,6 +379,20 @@ body .root .container .wrap .main-screen .provider .provider-img {
     width: 345px;
     max-height: 253px;
     border-radius: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  html .root .container .wrap .main-screen .provider .provider-img,
+  body .root .container .wrap .main-screen .provider .provider-img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .root .container .wrap .main-screen .provider .provider-img,
+  body .root .container .wrap .main-screen .provider .provider-img {
+    width: 300px;
   }
 }
 
@@ -560,6 +598,18 @@ body .root .container .wrap .main-screen .services .services-item:nth-child(2) {
   }
 }
 
+@media (max-width: 410px) {
+  html .root .container .wrap .main-screen .services .services-item .item-container .item-info .item-title,
+  body .root .container .wrap .main-screen .services .services-item .item-container .item-info .item-title {
+    margin: 0px;
+    font-size: 13px;
+  }
+  html .root .container .wrap .main-screen .services .services-item .item-container .item-info .item-desc,
+  body .root .container .wrap .main-screen .services .services-item .item-container .item-info .item-desc {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 375px) {
   html .root .container .wrap .main-screen .services .services-item .item-container,
   body .root .container .wrap .main-screen .services .services-item .item-container {
@@ -705,10 +755,31 @@ body .root .container .wrap .main-screen .services .services-item:nth-child(2) {
   }
 }
 
+@media (max-width: 410px) {
+  html .root .container .wrap,
+  body .root .container .wrap {
+    max-width: 340px;
+  }
+}
+
 @media (max-width: 375px) {
   html .root .container .wrap,
   body .root .container .wrap {
     max-width: 345px;
+  }
+}
+
+@media (max-width: 350px) {
+  html .root .container .wrap,
+  body .root .container .wrap {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .root .container .wrap,
+  body .root .container .wrap {
+    max-width: 300px;
   }
 }
 
@@ -768,6 +839,7 @@ body .root .container::after {
   html .root .container::after,
   body .root .container::after {
     width: 138px;
+    height: 791px;
   }
 }
 
@@ -792,10 +864,32 @@ body .root .container::after {
   }
 }
 
+@media (max-width: 410px) {
+  html .root .container::after,
+  body .root .container::after {
+    width: 100px;
+    height: 686px;
+  }
+}
+
 @media (max-width: 375px) {
   html .root .container::after,
   body .root .container::after {
     width: 100%;
-    height: 766px;
+    height: 832px;
+  }
+}
+
+@media (max-width: 350px) {
+  html .root .container::after,
+  body .root .container::after {
+    height: 832px;
+  }
+}
+
+@media (max-width: 320px) {
+  html .root .container::after,
+  body .root .container::after {
+    height: 832px;
   }
 }
